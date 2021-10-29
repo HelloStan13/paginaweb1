@@ -32,22 +32,27 @@ header .container
 }
 header .container .logo
 {
-    width:100px;
-    
+    width:100px;  
 }
 header .container  nav a
 {
     color: red;
     text-decoration: none;
     margin: 0 15px;
-
 }
-footer{
+header .container .hamb
+{
+    display: none;
+}
+footer
+{
     background-color: black;
     color: white;
     padding-top: 60px;
+    text-align: center;
 }
-footer .barra-footer {
+footer .barra-footer 
+{
     background-color: gray;
     text-align: center;
     padding-right: 15px;
@@ -165,6 +170,14 @@ footer ul li {
 } 
 .columna-50{
     width:50%;
+}
+.empujar-mobile-0
+{
+    margin-left: 0;
+}
+.sinpadding-mobile
+{
+ padding: 0;
 }
 .columna-41{
     width:41.66%;
@@ -297,11 +310,26 @@ width: 100%;
     margin-bottom: 0;
   }
 
-@media(max-width:767px) 
+@media(max-width: 767px) 
 {
+    body{
+        font-size: 15px;
+    }
+    form .boton.boton-negro{
+        width: 100%;
+    }
+    footer .logo-footer{
+        width: 50%;
+    }
     .container
     {
         width: 100%;
+    }
+    .columna-mobile-100{
+        width: 100%;
+    }
+    .columna-mobile-50{
+        width: 50%;
     }
     header .container  nav 
     {
@@ -317,11 +345,41 @@ width: 100%;
         left: 0;
         display: flex;
         flex-direction: column;
+        transition: all 0.4s ease;
+        transform: translateX(100%); 
+
     }
     header .container  nav a
     {
         font-size: 30px;
-        margin: 10px 0;
+        margin: 15px 0;
 
     }
-}
+    header .container .hamb
+    {
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+    #inicio
+    {
+    height: 100vh;
+    }
+    #inicio img
+    {
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+
+    }
+    #servicio .bloque-inicio{
+        margin-bottom: 15px;
+    }
+    #contactenos {
+       padding: 0;
+    }
+    #contactenos iframe{
+        position: relative;
+        height: 50vh;
+    }
+ 
