@@ -6,6 +6,7 @@ body{
 }
 a{
     display: inline-block;
+    text-decoration: none;
 }
 p
 {
@@ -43,7 +44,46 @@ header .container  nav a
 }
 footer{
     background-color: black;
+    color: white;
+    padding-top: 60px;
 }
+footer .barra-footer {
+    background-color: gray;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer .logo-footer {
+    width: 100%;
+}
+footer p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+footer ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+ }
+footer .redes {
+    font-size: 20px;
+    display: flex;
+    
+}
+footer .redes a {
+    margin: 0 7.5px;
+}
+footer ul li {
+    margin-bottom: 5px;
+}
+
 .boton{
     text-align: center;
     text-decoration: none;
@@ -116,6 +156,9 @@ footer{
 {
     padding-left: 15px;
     padding-right: 15px;
+}
+.columna-25{
+    width: 25%;
 }
 .columna-33{
     width: 33.33%;
@@ -253,4 +296,32 @@ width: 100%;
   #contactenos form .form-block.bloque-ultimo{
     margin-bottom: 0;
   }
-  
+
+@media(max-width:767px) 
+{
+    .container
+    {
+        width: 100%;
+    }
+    header .container  nav 
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    header .container  nav a
+    {
+        font-size: 30px;
+        margin: 10px 0;
+
+    }
+}
