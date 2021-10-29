@@ -43,6 +43,7 @@ header .container  nav a
 header .container .hamb
 {
     display: none;
+    position: relative;
 }
 footer
 {
@@ -334,7 +335,7 @@ width: 100%;
     .columna-mobile-50{
         width: 50%;
     }
-    header .container  nav 
+    header .container  nav
     {
         position: fixed;
         width: 100%;
@@ -350,7 +351,10 @@ width: 100%;
         flex-direction: column;
         transition: all 0.4s ease;
         transform: translateX(100%); 
-
+    }
+    header .container  nav.open 
+    {
+        transform: translateX(0); 
     }
     header .container  nav a
     {
@@ -363,6 +367,7 @@ width: 100%;
         display: block;
         font-size: 40px;
         color: red;
+        position: relative;
     }
     #inicio
     {
