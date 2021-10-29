@@ -321,6 +321,9 @@ width: 100%;
     footer .logo-footer{
         width: 50%;
     }
+    footer .redes{
+        justify-content: center;
+    }
     .container
     {
         width: 100%;
